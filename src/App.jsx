@@ -1,5 +1,9 @@
 import React from 'react'
+
+// Components 
 import Navbar from './Components/Navbar'
+
+//Pages
 import HomePage from './Pages/HomePage'
 import Shop from './Pages/Shop'
 import MyOrders from './Pages/MyOrders'
