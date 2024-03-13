@@ -1,8 +1,21 @@
 import React from 'react'
+import Navbar from './Components/Navbar'
+import HomePage from './Pages/HomePage'
+import Shop from './Pages/Shop'
+import MyOrders from './Pages/MyOrders'
+import LoginRegister from './Pages/LoginRegister'
 
 const App = () => {
   return (
-    <div>Welcome To EP Manager</div>
+    <>
+      <div>
+        <Navbar />
+        <HomePage />
+        <Shop />
+        <MyOrders />
+        <LoginRegister />
+      </div>
+    </>
   )
 }
 
