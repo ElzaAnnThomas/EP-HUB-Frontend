@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;`
+}
+
+.navbar{
+    width: 100%;
+    height: 5rem;
+    background-color: #92E3A9;
+}
