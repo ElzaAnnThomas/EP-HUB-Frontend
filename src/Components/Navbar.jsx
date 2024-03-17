@@ -5,20 +5,7 @@ import Logo from '../assets/Ep-Hub.png'
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <div className="logo">
-        <img className='logo-image' src={Logo} alt="" />
-      </div>
-      <div className="menu">
-        <li>
-          <ul><a href="">Home</a></ul>
-          <ul><a href="">Shop</a></ul>
-          <ul><a href="">My Orders</a></ul>
-          <div className="login-register">
-            <ul><a href="">Login</a></ul>
-            <ul><a href="">Register</a></ul>
-          </div>
-        </li>
-      </div>
+      
     </nav>
   )
 }
