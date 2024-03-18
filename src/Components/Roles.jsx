@@ -14,6 +14,34 @@ import 'swiper/css/scrollbar';
 
 
 const Roles = () => {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [noSlides, setNoSlides] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+
+      if (width < 800) {
+        setNoSlides(1);
+      } else if (width >= 800 && width <=1250) {
+        setNoSlides(2);
+      } else {
+        setNoSlides(3);
+      }
+
+      setWindowWidth(width);
+    };
+
+    handleResize(); // Initial setup
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   return (
     <section className="h-screen w-full flex flex-col items-center mt-20">
         <div className="text-ttOrange uppercase font-semibold tracking-widest">Programs</div>
