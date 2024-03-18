@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import demo1 from '../assets/job-seeker.jpg'
+import jobSeeker from '../assets/job-seeker.jpg'
+import sell from '../assets/sell.png'
+import buy from '../assets/buy.png'
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -64,7 +66,7 @@ const Roles = () => {
     >
       <SwiperSlide>
         <div className='flex flex-col w-56 h-full pb-5 justify-center '>
-              <img className='h-48 rounded-t-lg' src={demo1} alt="image" />
+              <img className='h-48 rounded-t-lg' src={jobSeeker} alt="image" />
               <div className='flex  flex-col w-56 p-3'>
                 <p className='text-md font-bold'>Course</p>
                 <p className='text-xs font-light'>Course details, mentors, and others </p>
@@ -73,7 +75,7 @@ const Roles = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className=' flex flex-col w-56 h-full '>
-              <img className='h-48 rounded-t-lg' src={demo1} alt="image" />
+              <img className='h-48 rounded-t-lg' src={buy} alt="image" />
               <div className='flex  flex-col w-full p-3'>
                 <p className='text-md font-bold'>Course</p>
                 <p className='text-xs font-light'>Course details, mentors, and others </p>
@@ -82,7 +84,7 @@ const Roles = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className=' flex flex-col w-56 h-full'>
-              <img className='h-48 rounded-t-lg' src={demo1} alt="image" />
+              <img className='h-48 rounded-t-lg' src={sell} alt="image" />
               <div className='flex  flex-col w-full p-3'>
                 <p className='text-md font-bold'>Course</p>
                 <p className='text-xs font-light'>Course details, mentors, and others </p>
