@@ -1,10 +1,10 @@
-import Navbar from "./Components/Navbar"
+import HomePage from "./Pages/HomePage"
 
 
 const Layout = () => {
   return (
     <div className="main-container">
-        <Navbar/>
+        <HomePage/>
     </div>
   )
 }
