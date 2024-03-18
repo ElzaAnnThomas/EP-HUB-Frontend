@@ -1,10 +1,9 @@
-import React from 'react'
+
 import './App.css'
 
-// Components 
-import Navbar from './Components/Navbar'
+//Layout import
+import Layout from './Layout'
 
-//Pages
 // import HomePage from './Pages/HomePage'
 // import Shop from './Pages/Shop'
 // import MyOrders from './Pages/MyOrders'
@@ -15,12 +14,7 @@ const App = () => {
   return (
     <>
       <div>
-        <Navbar />
-        {/* <HomePage />
-        <Shop />
-        <MyOrders />
-        <LoginRegister />
-        <Profile /> */}
+        <Layout/>
       </div>
     </>
   )
