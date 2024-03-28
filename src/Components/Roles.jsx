@@ -48,7 +48,7 @@ const Roles = () => {
     <section className="h-screen w-full flex flex-col items-center mt-20">
         
         <div className="space-grotesk text-[45px] w-2/3 text-center font-bold mt-4 max-sm:text-3xl max-md:text-3xl max-lg:text-3xl">THE ROLES.</div>
-        <div className="text-ttOrange uppercase font-semibold tracking-widest">Programs</div>
+        <div className="uppercase font-semibold tracking-widest text"><span>Choose the roles given below</span></div>
         <div className='flex flex-row h-92 mt-20 w-2/3 justify-center  overflow-hidden'>
 
 
