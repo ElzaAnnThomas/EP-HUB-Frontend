@@ -76,7 +76,7 @@ const Roles = () => {
 
       <SwiperSlide>
         <div className='flex flex-col w-56 h-full pb-5 justify-center '>
-              <img className='h-48 rounded-t-lg' src={jobSeeker} alt="image" />
+              <img className='h-48 rounded-t-lg' src={sell} alt="image" />
               <div className='flex  flex-col w-56 p-3'>
                 <p className='text-md font-bold'>Course</p>
                 <p className='text-xs font-light'>Course details, mentors, and others </p>
@@ -86,7 +86,7 @@ const Roles = () => {
 
       <SwiperSlide>
         <div className='flex flex-col w-56 h-full pb-5 justify-center '>
-              <img className='h-48 rounded-t-lg' src={jobSeeker} alt="image" />
+              <img className='h-48 rounded-t-lg' src={buy} alt="image" />
               <div className='flex  flex-col w-56 p-3'>
                 <p className='text-md font-bold'>Course</p>
                 <p className='text-xs font-light'>Course details, mentors, and others </p>
