@@ -41,3 +41,21 @@ a:hover{
     align-items: center;
     gap: 5px; 
 }
+
+
+
+
+
+@media screen and (max-width: 768px){
+    
+    .logo{
+        margin-left: 30px;
+        height: 15px;
+        width: 90px;
+    }
+
+    .nav-links{
+       display: none;
+    }
+    
+}
