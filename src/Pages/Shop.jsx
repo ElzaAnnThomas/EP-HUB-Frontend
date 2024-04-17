@@ -4,8 +4,15 @@ import Navbar from "../Components/Navbar"
 const Shop = () => {
   return (
     <div>
+      {/* importing Navbar */}
+
       <Navbar/>
-      Shop
+
+      {/* shoping page options */}
+
+      
+      
+
     </div>
   )
 }

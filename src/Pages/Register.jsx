@@ -34,11 +34,7 @@ const Register = () => {
                 <option>Kottayam</option>
                 <option>Ernakulam</option>
                 <option>Adoor</option>
-                
               </select>
-              <div>
-              
-                </div>
             </div>
         
             <div className='def'>
