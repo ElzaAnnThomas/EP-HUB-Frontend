@@ -5,6 +5,8 @@ import how from "../assets/how-it-works.png";
 import { useState } from "react";
 
 const Shop = () => {
+
+  // toggle useState to manage the state of the buttons
   const [sellerClicked, setSellerClicked] = useState(true);
   const [buyerClicked, setBuyerClicked] = useState(false);
 
@@ -24,8 +26,8 @@ const Shop = () => {
       <Navbar />
 
       {/* shoping page options */}
-      <div>
-        <img src={how} alt="" />
+      <div className="flex flex-col items-center mt-16">
+        <img src={how} alt="" className="h-16"/>
         <div>
           <button onClick={handleSellerClick}>Seller</button>
           <button onClick={handleBuyerClick}>Buyer</button>
