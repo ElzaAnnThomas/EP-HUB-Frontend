@@ -1,23 +1,15 @@
-import React from 'react';
-import './Register.css';
+import demo from '../assets/login-page-image.png';
+import Navbar from '../Components/Navbar';
+import '../Styles/Register.css';
 
 const Register = () => {
   return (
+    <>
+    <Navbar/>
     <div className='container'>
-      <nav className='navbar'>
-        <h1 className='hh'>EP-HUB</h1>
-        <div className='navleft'>
-          <ul className='ulleft'>
-            <li>HOME</li>
-            <li>SHOP</li>
-            <li><div>MY ORDERS</div></li>
-            <li>LOGIN</li>
-          </ul>
-        </div>
-      </nav>
       <div className='content'>
         <div className='img-box'>
-        <img src={require('../../../images/Frame 1.png')} alt="" />
+        <img src={demo} alt="" />
 
         </div>
         
@@ -42,11 +34,7 @@ const Register = () => {
                 <option>Kottayam</option>
                 <option>Ernakulam</option>
                 <option>Adoor</option>
-                
               </select>
-              <div>
-              
-                </div>
             </div>
         
             <div className='def'>
@@ -62,6 +50,7 @@ const Register = () => {
         </div>
       </div>
         </div>
+    </>
         
   );
 };

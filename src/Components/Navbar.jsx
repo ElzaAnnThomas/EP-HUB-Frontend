@@ -1,18 +1,19 @@
 import Logo from '../assets/Ep-Hub.png' 
 import menuButton from '../assets/menu-button.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='flex flex-row items-center justify-between bg-[#92E3A9] h-20 rounded-b-2xl'>
       <img src={Logo} alt="ep-hub"  className='h-5 w-28 ml-5'/>
-      <div className="max-sm:hidden">
-        <a href="/">Home</a>
-        <a href="/">Shop</a>
-        <a href="/">My Orders</a>
-        <div className="">
-          <a href="">Login</a>
+      <div className="max-sm:hidden flex flex-row mr-12 gap-10">
+        <Link to='/'>Home</Link>
+        <Link to='/shop'>Shop</Link>
+        <Link to='/my-orders'>My Orders</Link>
+        <div className="flex flex-row gap-1">
+          <Link to='/login'>Login</Link>
           <p>|</p>
-          <a href="">Resgister</a>
+          <Link to='/register'>Register</Link>
         </div>
       </div>
       <button className='sm:hidden'>
