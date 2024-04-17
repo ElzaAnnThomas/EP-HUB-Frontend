@@ -1,8 +1,12 @@
+import Navbar from "../Components/Navbar"
 
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <div>
+      <Navbar/>
+      Shop
+    </div>
   )
 }
 

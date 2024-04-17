@@ -1,8 +1,11 @@
-import React from 'react';
-import './Register.css';
+
+import Navbar from '../Components/Navbar';
+// import '../Styles/Register.css';
 
 const Register = () => {
   return (
+    <>
+    <Navbar/>
     <div className='container'>
       <nav className='navbar'>
         <h1 className='hh'>EP-HUB</h1>
@@ -17,7 +20,7 @@ const Register = () => {
       </nav>
       <div className='content'>
         <div className='img-box'>
-        <img src={require('../../../images/Frame 1.png')} alt="" />
+        <img src={require('../assets/homepage-image.png')} alt="" />
 
         </div>
         
@@ -62,6 +65,7 @@ const Register = () => {
         </div>
       </div>
         </div>
+    </>
         
   );
 };
