@@ -1,4 +1,4 @@
-import demo from '../assets/homepage-image.png';
+import demo from '../assets/login-page-image.png';
 import Navbar from '../Components/Navbar';
 import '../Styles/Register.css';
 
