@@ -1,26 +1,15 @@
-
+import demo from '../assets/homepage-image.png';
 import Navbar from '../Components/Navbar';
-// import '../Styles/Register.css';
+import '../Styles/Register.css';
 
 const Register = () => {
   return (
     <>
     <Navbar/>
     <div className='container'>
-      <nav className='navbar'>
-        <h1 className='hh'>EP-HUB</h1>
-        <div className='navleft'>
-          <ul className='ulleft'>
-            <li>HOME</li>
-            <li>SHOP</li>
-            <li><div>MY ORDERS</div></li>
-            <li>LOGIN</li>
-          </ul>
-        </div>
-      </nav>
       <div className='content'>
         <div className='img-box'>
-        <img src={require('../assets/homepage-image.png')} alt="" />
+        <img src={demo} alt="" />
 
         </div>
         
