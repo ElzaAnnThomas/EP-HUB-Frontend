@@ -54,12 +54,19 @@ const MyOrders = () => {
           {/* Map through ordersData array to display each order */}
           {ordersData.length ? (
             ordersData.map((order) => (
-              <div key={order.id} className="border-b pb-4 mb-4">
-                <h2 className="text-xl font-semibold mb-2">Order #{order.id}</h2>
-                <p className="text-gray-600">Order Date: {order.date}</p>
-                <p className="text-gray-600">Total Amount: ${order.totalAmount}</p>
-                <p className="text-gray-600">Plastic Name: {order.plasticName}</p>
-                <p className={`text-gray-600 ${order.transactionType === "Bought" ? "text-green-500" : "text-red-500"}`}>Transaction Type: {order.transactionType}</p>
+              <div key={order.id} className="border-b pb-4 mb-4 flex justify-between items-center">
+                {/* Left Side - Order Details */}
+                <div>
+                  <h2 className="text-xl font-semibold mb-2">Order #{order.id}</h2>
+                  <p className="text-gray-600">Total Amount: ${order.totalAmount}</p>
+                  <p className="text-gray-600">Plastic Name: {order.plasticName}</p>
+                </div>
+
+                {/* Right Side - Date and Transaction Type */}
+                <div className="text-right">
+                  <p className="text-gray-600">Order Date: {order.date}</p>
+                  <p className={`text-gray-600 ${order.transactionType === "Bought" ? "text-green-500" : "text-red-500"}`}>Transaction Type: {order.transactionType}</p>
+                </div>
               </div>
             ))
           ) : (
