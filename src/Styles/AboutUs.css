@@ -1,39 +1,41 @@
-.about-us{
+/* AboutUs Container */
+.about-us {
     width: 100%;
     height: 100vh;
-    margin: 150px 100px 0px 100px;
+    margin: 150px 100px 0 100px;
     display: flex;
     flex-direction: row;
-    font-size: 17px;
+    font-size: 22px;
     letter-spacing: 2px;
     line-height: 1.7;
 }
 
-.content{
-    width: 60%;
+/* Content Section */
+.content {
+    width: 900px;
     padding-right: 20px;
 }
 
-.image-container{
-    width: 40%;
-    height: 80%;
+/* Image Container */
+.image-container {
+    width: 400px;
+    height: 800px;
     display: flex;
     justify-content: center;
     padding: 20px;
     margin-right: 150px;
     margin-top: 50px;
-} 
+}
 
-.image{
+/* Image Styles */
+.image {
     width: 400px;
     height: 400px;
 }
 
-@media screen and (max-width: 768px){
-    
-    .image-container{
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .image-container {
         display: none;
     }
-    
 }
-
