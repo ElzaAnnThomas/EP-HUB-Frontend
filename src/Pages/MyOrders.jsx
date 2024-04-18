@@ -37,6 +37,34 @@ const ordersData = [
     plasticName: "PS Foam",
     transactionType: "Bought",
   },
+  {
+    id: 12345,
+    date: "April 15, 2024",
+    totalAmount: 100,
+    plasticName: "PET Bottles",
+    transactionType: "Bought",
+  },
+  {
+    id: 12345,
+    date: "April 15, 2024",
+    totalAmount: 100,
+    plasticName: "PET Bottles",
+    transactionType: "Sold",
+  },
+  {
+    id: 12345,
+    date: "April 15, 2024",
+    totalAmount: 100,
+    plasticName: "PET Bottles",
+    transactionType: "Sold",
+  },
+  {
+    id: 12345,
+    date: "April 15, 2024",
+    totalAmount: 100,
+    plasticName: "PET Bottles",
+    transactionType: "Bought",
+  },
 ];
 
 const MyOrders = () => {
@@ -47,7 +75,7 @@ const MyOrders = () => {
 
       {/* Page Content */}
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-2xl font-semibold mb-4">My Orders</h1>
+        {/* <h1 className="text-2xl font-semibold mb-4">My Orders</h1> */}
 
         {/* Orders List */}
         <div className="bg-white p-6 rounded-md shadow-md">
@@ -70,9 +98,10 @@ const MyOrders = () => {
               </div>
             ))
           ) : (
-            <div className="text-center text-gray-500">
-              You haven't placed any orders yet.
-            </div>
+            // <div className="text-center text-gray-500">
+            //   You haven't placed any orders yet.
+            // </div>
+            []
           )}
         </div>
       </div>
