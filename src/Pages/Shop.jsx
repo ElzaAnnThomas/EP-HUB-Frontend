@@ -43,13 +43,13 @@ const Shop = () => {
         
         {/* Conditional rendering based on button clicks */}
         {sellerClicked && (
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <img src={sellerdesc} alt="" className="mx-auto" />
+          <div className=" bg-white p-4 rounded-lg shadow-xl">
+            <img src={sellerdesc} alt="" className="mx-auto h-[350px]" />
           </div>
         )}
         {buyerClicked && (
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <img src={buyerdesc} alt="" className="mx-auto" />
+          <div className=" bg-white p-4 rounded-lg shadow-xl">
+            <img src={buyerdesc} alt="" className="mx-auto h-[350px] mr-14" />
           </div>
         )}
       </div>
