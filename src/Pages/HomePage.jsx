@@ -4,6 +4,7 @@ import Roles from "../Components/Roles"
 // import bgImage from '../assets/bg-image.webp'
 
 import '../Styles/HomePage.css'
+import LandingPage from "./LandingPage"
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Navbar/>
       <AboutUs/>
       <Roles/>
+      <LandingPage/>
     </div>
   )
 }
