@@ -129,7 +129,9 @@ const items = [
 
 const ItemCards = () => {
   return (
-    <div className="grid grid-cols-4 gap-1 mt-20 mx-28">
+    <div className='flex flex-col justify-center items-center mt-20'>
+        <p className='text-5xl font-extrabold overflow-hidden opacity-70'>THE LATEST IN THE STORE!</p>
+        <div className="grid grid-cols-4 gap-1 mx-36 mt-10">
       {items.map((item) => (
         <div key={item.id} className="h-80 w-72 max-w-xs rounded overflow-hidden shadow-lg m-2">
           <img className="w-full h-44" src={item.image} alt={item.name} />
@@ -149,6 +151,7 @@ const ItemCards = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
