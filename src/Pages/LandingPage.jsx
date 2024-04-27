@@ -1,3 +1,4 @@
+import ItemCards from "../Components/ItemCards"
 import OfferCarousel from "../Components/OfferCarousel"
 import SearchBar from "../Components/SearchBar"
 
@@ -7,6 +8,7 @@ const LandingPage = () => {
     <div>
         <SearchBar/>
         <OfferCarousel/>
+        <ItemCards/>
     </div>
   )
 }
