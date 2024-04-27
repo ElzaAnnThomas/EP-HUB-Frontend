@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import logo from '../assets/Ep-Hub.png';
 
 const SearchBar = () => {
@@ -23,8 +24,8 @@ const SearchBar = () => {
       </form>
       <div className="flex flex-row items-center justify-center">
         <div className="mr-12 flex flex-row items-center justify-center gap-5">
-          <a href="" className={`mr-4 ${activeLink === 'Buy' ? 'font-semibold text-white underline' : ''}`} onClick={() => setActiveLink('Buy')}>Buy</a>
-          <a href="" className={`mr-4 ${activeLink === 'Sell' ? 'font-semibold text-white underline' : ''}`} onClick={() => setActiveLink('Sell')}>Sell</a>
+          <Link to="/buy" className={`mr-4 ${activeLink === 'Buy' ? 'font-semibold text-white underline' : ''}`} onClick={() => setActiveLink('Buy')}>Buy</Link>
+          <Link to="/sell" className={`mr-4 ${activeLink === 'Sell' ? 'font-semibold text-white underline' : ''}`} onClick={() => setActiveLink('Sell')}>Sell</Link>
         </div>
         <button className="bg-white text-black hover:bg-green-400 hover:text-white py-1 px-2 rounded">Logout</button>
       </div>
