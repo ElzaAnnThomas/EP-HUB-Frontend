@@ -129,7 +129,7 @@ const items = [
 
 const ItemCards = () => {
   return (
-    <div className="flex flex-wrap justify-around mt-20 mx-28">
+    <div className="grid grid-cols-4 gap-1 mt-20 mx-28">
       {items.map((item) => (
         <div key={item.id} className="h-80 w-72 max-w-xs rounded overflow-hidden shadow-lg m-2">
           <img className="w-full h-44" src={item.image} alt={item.name} />
