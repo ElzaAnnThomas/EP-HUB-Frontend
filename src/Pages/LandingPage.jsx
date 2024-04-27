@@ -1,5 +1,4 @@
-
-import OffersCarousel from "../Components/OffersCarousel"
+import OfferCarousel from "../Components/OfferCarousel"
 import SearchBar from "../Components/SearchBar"
 
 
@@ -7,8 +6,7 @@ const LandingPage = () => {
   return (
     <div>
         <SearchBar/>
-        <OffersCarousel/>
-        
+        <OfferCarousel/>
     </div>
   )
 }
