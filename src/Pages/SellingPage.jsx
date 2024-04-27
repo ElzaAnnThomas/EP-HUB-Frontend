@@ -23,8 +23,9 @@ const SellingPage = () => {
   };
 
   return (
-    <div>
+    <div className='flex flex-col'>
       <SearchBar/>
+      <p className='text-3xl font-semibold opacity-80 underline mt-10 text-center overflow-hidden'>Create a Listing</p>
       <form onSubmit={handleSubmit} className="p-4 flex flex-col items-center mt-20">
         {/* upload image option */}
         <div>
