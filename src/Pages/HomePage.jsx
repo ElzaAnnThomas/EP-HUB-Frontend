@@ -1,4 +1,5 @@
 import AboutUs from "../Components/AboutUs"
+import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar"
 import Roles from "../Components/Roles"
 // import bgImage from '../assets/bg-image.webp'
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Navbar/>
       <AboutUs/>
       <Roles/>
+      <Footer/>
       <LandingPage/>
     </div>
   )
