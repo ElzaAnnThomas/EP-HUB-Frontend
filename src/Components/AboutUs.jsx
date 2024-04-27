@@ -3,7 +3,7 @@ import image from '../assets/homepage-image.png';
 
 const AboutUs = () => {
   return (
-    <div className="about-us">
+    <div className="about-us overflow-hidden">
        <div className="content">
             <h4 className='w-[600px] font-medium'>Welcome to EP-HUB!</h4>
             <p className='mt-[70px]'>
