@@ -1,6 +1,42 @@
 
 
-
+const items = [
+  {
+    "id": 1,
+    "image": "https://example.com/images/plastic1.jpg",
+    "name": "Plastic 1",
+    "available": true,
+    "price": 10.99
+  },
+  {
+    "id": 2,
+    "image": "https://example.com/images/plastic2.jpg",
+    "name": "Plastic 2",
+    "available": false,
+    "price": 15.99
+  },
+  {
+    "id": 3,
+    "image": "https://example.com/images/plastic3.jpg",
+    "name": "Plastic 3",
+    "available": true,
+    "price": 12.99
+  },
+  {
+    "id": 4,
+    "image": "https://example.com/images/plastic4.jpg",
+    "name": "Plastic 4",
+    "available": true,
+    "price": 9.99
+  },
+  {
+    "id": 5,
+    "image": "https://example.com/images/plastic5.jpg",
+    "name": "Plastic 5",
+    "available": false,
+    "price": 14.99
+  }
+];
 
 const ItemCards = () => {
   return (
