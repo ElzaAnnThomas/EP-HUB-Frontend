@@ -20,7 +20,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${process.env.REACT_APP_EP_HUB_BACKEND_URL}/register`, formData);
+      const response = await axios.post(`${process.env.REACT_APP_DJANGO_API_URL}/api/v1/auth/register`, formData);
       console.log(response.data);
     } catch (error) {
       console.error(error);
