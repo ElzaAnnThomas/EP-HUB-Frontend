@@ -1,4 +1,11 @@
+import { useState } from "react"
+import axios from "axios"
+import { useNavigate } from "react-router-dom"
+
 const OTPVerify = () => {
+
+    const [OTP, setOTP] = useState('')
+
     return (
       <div className="flex justify-center items-center h-screen bg-gray-200">
           <div className="bg-white p-8 rounded shadow-md w-1/3">
