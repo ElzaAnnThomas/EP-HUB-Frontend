@@ -3,6 +3,7 @@ import axios from 'axios';
 import demo from '../assets/login-page-image.png';
 import Navbar from '../Components/Navbar';
 import '../Styles/Register.css';
+import { useNavigate } from 'react-router-dom';
 // import dotenv from 'dotenv';
 
 const Register = () => {
@@ -17,6 +18,9 @@ const Register = () => {
     city: '',
   });
 
+  const navigate = useNavigate(); //declaring navigate function to navigate to another page
+
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -26,6 +30,7 @@ const Register = () => {
     try {
       const response = await axios.post("https://lordgrim.pythonanywhere.com/api/v1/auth/register/", formData);
       console.log(response.data);
+      navigate('/buy');
     } catch (error) {
       console.error(error);
     }
