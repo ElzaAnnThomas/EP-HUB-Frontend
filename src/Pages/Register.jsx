@@ -4,6 +4,7 @@ import demo from '../assets/login-page-image.png';
 import Navbar from '../Components/Navbar';
 import '../Styles/Register.css';
 import { useNavigate } from 'react-router-dom';
+import OTPVerify from '../Components/OTPVerify';
 // import dotenv from 'dotenv';
 
 const Register = () => {
@@ -20,7 +21,7 @@ const Register = () => {
 
   const [isRegistered, setIsRegistered] = useState(false);
 
-  const navigate = useNavigate(); //declaring navigate function to navigate to another page
+  // const navigate = useNavigate(); //declaring navigate function to navigate to another page
 
 
   const handleChange = (e) => {
@@ -47,7 +48,7 @@ const Register = () => {
       <Navbar/>
       {isRegistered ? (
         <div>
-          OTP//Add OTP verification here
+          <OTPVerify/>
         </div>
       ) : (
         <div className='container'>

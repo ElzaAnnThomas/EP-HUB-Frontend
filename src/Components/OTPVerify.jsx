@@ -1,8 +1,10 @@
-import React from 'react'
+
 
 const OTPVerify = () => {
   return (
-    <div>OTPVerify</div>
+    <div>
+        {/* OTP */}
+    </div>
   )
 }
 
