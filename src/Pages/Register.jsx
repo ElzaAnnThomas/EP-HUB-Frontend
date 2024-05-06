@@ -18,6 +18,8 @@ const Register = () => {
     city: '',
   });
 
+  const [isRegistered, setIsRegistered] = useState(false);
+
   const navigate = useNavigate(); //declaring navigate function to navigate to another page
 
 
@@ -39,6 +41,9 @@ const Register = () => {
   return (
     <>
       <Navbar/>
+      if (condition) {
+        
+      }
       <div className='container'>
         <div className='content'>
           <div className='img-box'>
@@ -75,6 +80,9 @@ const Register = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div>
+        OTP//Add OTP verification here
       </div>
     </>
   );
