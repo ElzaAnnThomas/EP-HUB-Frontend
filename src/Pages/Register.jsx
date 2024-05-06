@@ -32,7 +32,11 @@ const Register = () => {
     try {
       const response = await axios.post("https://lordgrim.pythonanywhere.com/api/v1/auth/register/", formData);
       console.log(response.data);
-      navigate('/buy');
+      console.log(response);
+      // navigate('/buy');
+      if(response.statusText === "Created"){
+        setIsRegistered(true);
+      }
     } catch (error) {
       console.error(error);
     }
@@ -41,10 +45,12 @@ const Register = () => {
   return (
     <>
       <Navbar/>
-      if (condition) {
-        
-      }
-      <div className='container'>
+      {isRegistered ? (
+        <div>
+          OTP//Add OTP verification here
+        </div>
+      ) : (
+        <div className='container'>
         <div className='content'>
           <div className='img-box'>
             <img src={demo} alt="" />
@@ -81,9 +87,8 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <div>
-        OTP//Add OTP verification here
-      </div>
+      )}
+      
     </>
   );
 };
