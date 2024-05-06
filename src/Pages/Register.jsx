@@ -3,7 +3,7 @@ import axios from 'axios';
 import demo from '../assets/login-page-image.png';
 import Navbar from '../Components/Navbar';
 import '../Styles/Register.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import OTPVerify from '../Components/OTPVerify';
 // import dotenv from 'dotenv';
 
@@ -87,6 +87,7 @@ const Register = () => {
             </form>
           </div>
         </div>
+        <OTPVerify/>
       </div>
       )}
       
